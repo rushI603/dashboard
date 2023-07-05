@@ -13,6 +13,10 @@ module.exports = {
       },
       colors: {
         'primary-orange': '#FF5722',
+        'gray-blue': 'Grey Blue 50',
+      },
+      fontSize: {
+        menu: ['13px', '25px'],
       }
     },
   },
