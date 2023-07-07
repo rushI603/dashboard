@@ -34,3 +34,23 @@ body {
 .h-90vh {
   height: 90vh;
 }
+
+.min-h-10vh {
+  min-height: 10vh;
+}
+
+.border-grd {
+  background-image: linear-gradient(to right, #ef5350 75%,  #4dd0e1 100%) 1;
+}
+
+.white::after {
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  content: "";
+  height: 100vh;
+  position: fixed;
+  width: 100px;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}

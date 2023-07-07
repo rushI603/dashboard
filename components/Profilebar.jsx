@@ -4,8 +4,8 @@ import Profile from '../assets/Image4.png'
 
 const Profilebar = () => {
   return (
-    <div className='flex overflow-y-auto sticky top-10vh w-fit border-2 flex-col items-center'>
-      <div className="icons w-full px-2 flex justify-between">
+    <div className='flex shrink-0 overflow-y-auto h-90vh sticky top-10vh w-fit border-2 flex-col items-center'>
+      <div className="icons  w-full px-2 flex justify-between">
         <svg xmlns="http://www.w3.org/2000/svg" className='' width="28" height="29" viewBox="0 0 28 29" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M14 14.5C16.0627 14.5 17.7333 12.8293 17.7333 10.7667C17.7333 8.70399 16.0627 7.03333 14 7.03333C11.9373 7.03333 10.2667 8.70399 10.2667 10.7667C10.2667 12.8293 11.9373 14.5 14 14.5ZM14 16.3667C11.508 16.3667 6.53333 17.6173 6.53333 20.1V21.0333C6.53333 21.5467 6.95333 21.9667 7.46666 21.9667H20.5333C21.0467 21.9667 21.4667 21.5467 21.4667 21.0333V20.1C21.4667 17.6173 16.492 16.3667 14 16.3667Z" fill="#C3CAD9"/>
         </svg>
@@ -13,9 +13,9 @@ const Profilebar = () => {
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39999 12.6333C7.37333 12.6333 6.53333 13.4733 6.53333 14.5C6.53333 15.5267 7.37333 16.3667 8.39999 16.3667C9.42666 16.3667 10.2667 15.5267 10.2667 14.5C10.2667 13.4733 9.42666 12.6333 8.39999 12.6333ZM19.6 12.6333C18.5733 12.6333 17.7333 13.4733 17.7333 14.5C17.7333 15.5267 18.5733 16.3667 19.6 16.3667C20.6267 16.3667 21.4667 15.5267 21.4667 14.5C21.4667 13.4733 20.6267 12.6333 19.6 12.6333ZM14 12.6333C12.9733 12.6333 12.1333 13.4733 12.1333 14.5C12.1333 15.5267 12.9733 16.3667 14 16.3667C15.0267 16.3667 15.8667 15.5267 15.8667 14.5C15.8667 13.4733 15.0267 12.6333 14 12.6333Z" fill="#C3CAD9"/>
         </svg>
       </div>
-      <div className="profile-img border-2   after:content-['2'] after:absolute after:left-[85%] after:bg-[#3361FF] after:rounded-full after:h-6 after:w-6 after:text-[#FFFFFF] after:flex after:text-[10px] after:justify-center after:items-center after:bottom-1/3 w-fit h-fit rounded-full p-1 relative border-2 border-[#3361FF]">
+      <div className="profile-img border-2  after:content-['2'] after:absolute after:left-[85%] after:bg-[#3361FF] after:rounded-full after:h-6 after:w-6 after:text-[#FFFFFF] after:flex after:text-[10px] after:justify-center after:items-center after:bottom-1/3 w-fit h-fit rounded-full p-1 relative border-2 border-[#3361FF]">
         <Image
-        className="   rounded-full bg-[#FFCB3366]"
+        className=" border-grd rounded-full bg-[#FFCB3366]"
             src={Profile}
             width={75}
             height={75}
@@ -24,7 +24,7 @@ const Profilebar = () => {
       <div className=' text-sm mt-4 font-bold text-[#6B7A99]'>Hello Alfred Bryant</div>
       <p className='text-[#ADB8CC] m-2 text-xs font-normal'>adrain.nader@yahoo.com</p>
       <div className='grid m-6 bg-[#EDEFF2] grid-cols-2 border-2 rounded-lg'>
-        <div className='py-6 px-11 flex flex-col border-2 justify-center items-center'>
+        <div className='py-6 px-6 flex flex-col border-2 justify-center items-center'>
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M7 16.5H13C13.55 16.5 14 16.05 14 15.5V7.5C14 6.95 13.55 6.5 13 6.5H7C6.45 6.5 6 6.95 6 7.5V15.5C6 16.05 6.45 16.5 7 16.5ZM7 24.5H13C13.55 24.5 14 24.05 14 23.5V19.5C14 18.95 13.55 18.5 13 18.5H7C6.45 18.5 6 18.95 6 19.5V23.5C6 24.05 6.45 24.5 7 24.5ZM17 24.5H23C23.55 24.5 24 24.05 24 23.5V15.5C24 14.95 23.55 14.5 23 14.5H17C16.45 14.5 16 14.95 16 15.5V23.5C16 24.05 16.45 24.5 17 24.5ZM16 7.5V11.5C16 12.05 16.45 12.5 17 12.5H23C23.55 12.5 24 12.05 24 11.5V7.5C24 6.95 23.55 6.5 23 6.5H17C16.45 6.5 16 6.95 16 7.5Z" fill="#C3CAD9"/>
           </svg>

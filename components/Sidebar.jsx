@@ -7,7 +7,7 @@ import img4 from '../assets/Image3.png'
 
 const Sidebar = () => {
   return (
-    <div className='flex sticky left-0 top-10vh flex-col justify-center px-2 border-r-2 py-4 h-90vh'>
+    <div className='flex  sticky left-0 top-10vh flex-col justify-center px-2 border-r-2 py-4 z-30 h-90vh'>
       <div className='flex flex-col justify-center gap-2'>
         <button className='bg-white p-2 rounded-full relative'>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 31" fill="none">
