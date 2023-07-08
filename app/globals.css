@@ -21,6 +21,11 @@ body {
   background: #EDEFF2;
   height: 100%;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth !important;
+}
+
+.line-break-strict {
+  line-break: strict;
 }
 
 .h-10vh {
@@ -53,4 +58,12 @@ body {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
+}
+
+#btn:checked + label > #sm-menu {
+  display: block;
+}
+
+.max {
+  width: calc(max(100%, fit-content));
 }

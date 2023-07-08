@@ -15,11 +15,13 @@ import inwork1 from '../assets/Inwork1.png'
 import inwork2 from '../assets/Inwork2.png'
 import inwork3 from '../assets/Inwork3.png'
 import review1 from '../assets/Review1.png'
+import bottom from '../assets/bottom.png'
+import Bottom from './Bottom'
 
 const Base = () => {
   return (
-    <div className='w-fit border-2 border-[#FF0000] mx-2 sl:overflow-scroll'>
-        <div className="flex px-8 justify-between w-full border-2">
+    <div className='w-full overflow-x-scroll border-2 rounded-lg sl:overflow-scroll'>
+        <div className="flex px-8 justify-between sticky left-0 w-full border-b-2">
             <div className='flex justify-around pb:hidden grow'>
                 <div className='item flex items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 31" fill="none">
@@ -58,7 +60,7 @@ const Base = () => {
                     <p className='text-xs text-[#7D8FB3]'>Acitvity</p>
                 </div>
             </div>
-            <div className='hidden pb:flex '>
+            <div className='hidden pb:flex'>
                 <div className='flex p-1 m-2 justify-center items-center bg-white rounded-full'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.073 17.7316L13.4517 14.1103L17.073 10.489C17.437 10.125 17.437 9.53698 17.073 9.17298C16.8986 8.99821 16.6619 8.89999 16.415 8.89999C16.1681 8.89999 15.9314 8.99821 15.757 9.17298L11.473 13.457C11.109 13.821 11.109 14.409 11.473 14.773L15.757 19.057C16.121 19.421 16.709 19.421 17.073 19.057C17.4277 18.693 17.437 18.0956 17.073 17.7316Z" fill="#C3CAD9"/>
@@ -76,15 +78,15 @@ const Base = () => {
                     </svg>
                 </div>
             </div>
-            <div className='bg-white flex p-1 m-2 text-xs w-fit rounded-3xl'>
+            <div className='bg-white flex p-1 m-2 text-xs w-fit  rounded-3xl'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8005 14.1005H14.1685L13.9445 13.8845C14.9045 12.7645 15.4005 11.2365 15.1285 9.61249C14.7525 7.38849 12.8965 5.61249 10.6565 5.34049C7.27249 4.92449 4.42449 7.77249 4.84049 11.1565C5.11249 13.3965 6.88849 15.2525 9.11249 15.6285C10.7365 15.9005 12.2645 15.4045 13.3845 14.4445L13.6005 14.6685V15.3005L17.0005 18.7005C17.3285 19.0285 17.8645 19.0285 18.1925 18.7005C18.5205 18.3725 18.5205 17.8365 18.1925 17.5085L14.8005 14.1005ZM10.0005 14.1005C8.00849 14.1005 6.40049 12.4925 6.40049 10.5005C6.40049 8.50849 8.00849 6.90049 10.0005 6.90049C11.9925 6.90049 13.6005 8.50849 13.6005 10.5005C13.6005 12.4925 11.9925 14.1005 10.0005 14.1005Z" fill="#C3CAD9"/>
                 </svg>
-                <input className='w-fit text-xs focus:outline-none font-bold' type="text" placeholder='Search Tasks' />
+                <input className='w-fit vs:w-6 mx-4 text-xs focus:outline-none font-bold' type="text" placeholder='Search Tasks' />
             </div>
         </div>
 
-        <div className='flex w-fit px-4 border-2 justify-around gap-x-4 pt-2'>
+        <div className='flex w-fit px-4 justify-self-stretch justify-around gap-x-4 pt-2'>
             <div className=' rounded-lg flex gap-y-4 flex-col'>
                 <div className='bg-white py-2 gap-x-8 rounded-lg mb-2 flex justify-between items-center'>
                     <div className='text-xs pl-2 flex border-l-[3px] grow justify-around rounded-[3px] border-[#8833FF] items-center text-[#4D5E80] font-black'>TO DO
@@ -115,7 +117,7 @@ const Base = () => {
                                 height={20}
                             />
                         </div>
-                        <span className=' m-2 text-[#6B7A99] font-bold text-xs'>Make Money Online Through</span>
+                        <div className=' m-2 text-[#6B7A99] font-bold text-xs'>Make Money Online Through</div>
                         <div className="mx-2 mr-6 mt-2 time-left flex justify-between items-center">
                             <svg className='inline ' xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7 12.5C7.55 12.5 8 12.05 8 11.5C8 10.95 7.55 10.5 7 10.5C6.45 10.5 6 10.95 6 11.5C6 12.05 6.45 12.5 7 12.5ZM8 15.5C8 16.05 7.55 16.5 7 16.5C6.45 16.5 6 16.05 6 15.5C6 14.95 6.45 14.5 7 14.5C7.55 14.5 8 14.95 8 15.5ZM8 19.5C8 20.05 7.55 20.5 7 20.5C6.45 20.5 6 20.05 6 19.5C6 18.95 6.45 18.5 7 18.5C7.55 18.5 8 18.95 8 19.5ZM24 15.5C24 16.05 23.55 16.5 23 16.5H11C10.45 16.5 10 16.05 10 15.5C10 14.95 10.45 14.5 11 14.5H23C23.55 14.5 24 14.95 24 15.5ZM23 20.5C23.55 20.5 24 20.05 24 19.5C24 18.95 23.55 18.5 23 18.5H11C10.45 18.5 10 18.95 10 19.5C10 20.05 10.45 20.5 11 20.5H23ZM11 12.5C10.45 12.5 10 12.05 10 11.5C10 10.95 10.45 10.5 11 10.5H23C23.55 10.5 24 10.95 24 11.5C24 12.05 23.55 12.5 23 12.5H11Z" fill="#C3CAD9"/>
@@ -128,7 +130,7 @@ const Base = () => {
                             <svg className='inline' xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4064 18.5314L15.0364 16.5314V12.0014C15.0364 11.6014 14.7164 11.2814 14.3164 11.2814H14.2564C13.8564 11.2814 13.5364 11.6014 13.5364 12.0014V16.7214C13.5364 17.0714 13.7164 17.4014 14.0264 17.5814L17.6764 19.7714C18.0164 19.9714 18.4564 19.8714 18.6564 19.5314C18.8664 19.1814 18.7564 18.7314 18.4064 18.5314ZM23.7164 8.29139L20.6364 5.73139C20.2164 5.38139 19.5864 5.43139 19.2264 5.86139C18.8764 6.28139 18.9364 6.91139 19.3564 7.27139L22.4264 9.83139C22.8464 10.1814 23.4764 10.1314 23.8364 9.70139C24.1964 9.28139 24.1364 8.65139 23.7164 8.29139ZM6.63638 9.83139L9.70638 7.27139C10.1364 6.91139 10.1964 6.28139 9.83638 5.86139C9.48638 5.43139 8.85638 5.38139 8.43638 5.73139L5.35638 8.29139C4.93638 8.65139 4.87638 9.28139 5.23638 9.70139C5.58638 10.1314 6.21638 10.1814 6.63638 9.83139ZM14.5364 7.28139C9.56638 7.28139 5.53638 11.3114 5.53638 16.2814C5.53638 21.2514 9.56638 25.2814 14.5364 25.2814C19.5064 25.2814 23.5364 21.2514 23.5364 16.2814C23.5364 11.3114 19.5064 7.28139 14.5364 7.28139ZM14.5364 23.2814C10.6764 23.2814 7.53638 20.1414 7.53638 16.2814C7.53638 12.4214 10.6764 9.28139 14.5364 9.28139C18.3964 9.28139 21.5364 12.4214 21.5364 16.2814C21.5364 20.1414 18.3964 23.2814 14.5364 23.2814Z" fill="#C3CAD9"/>
                             </svg>
-                            <span className='text-[10px] text-[#6B7A99] font-bold'>6 Days Left</span>
+                            <span className='line-break-strict text-[10px] text-[#6B7A99] font-bold'>6 Days Left</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +152,7 @@ const Base = () => {
                                 />
                         </div>
                     </div>
-                    <span className=' m-4 text-[#6B7A99] font-bold text-xs'>Make Money Online Through</span>
+                    <div className=' m-4 text-[#6B7A99] font-bold text-xs'>Make Money Online Through</div>
                 </div>
                 <div className='bg-white pt-1 pb-4 rounded-lg'>
                     <div className='flex p-4 justify-between items-center'>
@@ -176,7 +178,7 @@ const Base = () => {
                                 />
                         </div>
                     </div>
-                    <span className=' m-4 text-[#6B7A99] font-bold text-xs'>Search Engine Optimization ...</span>
+                    <div className=' m-4 text-[#6B7A99] font-bold text-xs'>Search Engine Optimization ...</div>
                 </div>
                 <div className='bg-white pt-1 pb-4 rounded-lg'>
                     <div className='flex p-4 justify-between items-center'>
@@ -190,7 +192,7 @@ const Base = () => {
                                 />
                         </div>
                     </div>
-                    <span className='py-4 m-4 text-[#6B7A99] font-bold text-xs'>Characteristics Of A Successful</span>
+                    <div className=' m-4 text-[#6B7A99] font-bold text-xs'>Characteristics Of A Successful</div>
                 </div>
                 <div className='bg-white pt-1 pb-4 rounded-lg'>
                     <div className='flex p-4 justify-between items-center'>
@@ -204,7 +206,7 @@ const Base = () => {
                                 />
                         </div>
                     </div>
-                    <span className=' m-4 text-[#6B7A99] font-bold text-xs'>Getting Free Publicity</span>
+                    <div className=' m-4 text-[#6B7A99] font-bold text-xs'>Getting Free Publicity</div>
                 </div>
                 <div className='bg-white pt-1 pb-4 rounded-lg'>
                     <div className='flex p-4 justify-between items-center'>
@@ -218,7 +220,7 @@ const Base = () => {
                                 />
                         </div>
                     </div>
-                    <span className=' m-4 text-[#6B7A99] font-bold text-xs'>Importance Of The Custom ...</span>
+                    <div className=' m-4 text-[#6B7A99] font-bold text-xs'>Importance Of The Custom ...</div>
                 </div>
                 <span className='text-[#6B7A99] p-2 mx-2 font-bold text-xs'>+ NEW TASK</span>
             </div>
@@ -430,8 +432,9 @@ const Base = () => {
                     <span className=' mx-4 text-[#6B7A99] font-bold text-xs'>Copper Canyon</span>
                 </div>
             </div>
-
         </div>
+        <Bottom/>
+        
     </div>
   )
 }

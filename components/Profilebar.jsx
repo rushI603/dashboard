@@ -4,7 +4,7 @@ import Profile from '../assets/Image4.png'
 
 const Profilebar = () => {
   return (
-    <div className='flex shrink-0 overflow-y-auto h-90vh sticky top-10vh w-fit border-2 flex-col items-center'>
+    <div className='flex shrink-0 md:hidden overflow-y-auto h-90vh sticky top-10vh w-fit border-2 flex-col items-center'>
       <div className="icons  w-full px-2 flex justify-between">
         <svg xmlns="http://www.w3.org/2000/svg" className='' width="28" height="29" viewBox="0 0 28 29" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M14 14.5C16.0627 14.5 17.7333 12.8293 17.7333 10.7667C17.7333 8.70399 16.0627 7.03333 14 7.03333C11.9373 7.03333 10.2667 8.70399 10.2667 10.7667C10.2667 12.8293 11.9373 14.5 14 14.5ZM14 16.3667C11.508 16.3667 6.53333 17.6173 6.53333 20.1V21.0333C6.53333 21.5467 6.95333 21.9667 7.46666 21.9667H20.5333C21.0467 21.9667 21.4667 21.5467 21.4667 21.0333V20.1C21.4667 17.6173 16.492 16.3667 14 16.3667Z" fill="#C3CAD9"/>
@@ -13,11 +13,14 @@ const Profilebar = () => {
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39999 12.6333C7.37333 12.6333 6.53333 13.4733 6.53333 14.5C6.53333 15.5267 7.37333 16.3667 8.39999 16.3667C9.42666 16.3667 10.2667 15.5267 10.2667 14.5C10.2667 13.4733 9.42666 12.6333 8.39999 12.6333ZM19.6 12.6333C18.5733 12.6333 17.7333 13.4733 17.7333 14.5C17.7333 15.5267 18.5733 16.3667 19.6 16.3667C20.6267 16.3667 21.4667 15.5267 21.4667 14.5C21.4667 13.4733 20.6267 12.6333 19.6 12.6333ZM14 12.6333C12.9733 12.6333 12.1333 13.4733 12.1333 14.5C12.1333 15.5267 12.9733 16.3667 14 16.3667C15.0267 16.3667 15.8667 15.5267 15.8667 14.5C15.8667 13.4733 15.0267 12.6333 14 12.6333Z" fill="#C3CAD9"/>
         </svg>
       </div>
-      <div className="profile-img border-2  after:content-['2'] after:absolute after:left-[85%] after:bg-[#3361FF] after:rounded-full after:h-6 after:w-6 after:text-[#FFFFFF] after:flex after:text-[10px] after:justify-center after:items-center after:bottom-1/3 w-fit h-fit rounded-full p-1 relative border-2 border-[#3361FF]">
+      <div className="profile-img after:content-['2'] after:absolute after:left-[80%] after:bg-[#3361FF] after:rounded-full after:h-6 after:w-6 after:text-[#FFFFFF] after:flex after:text-[10px] after:justify-center after:items-center after:bottom-1/3 w-fit h-fit rounded-full p-1 relative">
+        <svg className='absolute' xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 132 133" fill="none">
+          <path d="M66 1.5C30.1015 1.5 1 30.6015 1 66.5C1 102.399 30.1015 131.5 66 131.5V131.5C101.899 131.5 131 102.399 131 66.5" stroke="#3361FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         <Image
-        className=" border-grd rounded-full bg-[#FFCB3366]"
+        className="relative left-0.5 top-0.5 rounded-full bg-[#FFCB3366] overflow-hidden"
             src={Profile}
-            width={75}
+            width={70}
             height={75}
         />
       </div>
@@ -30,7 +33,10 @@ const Profilebar = () => {
           </svg>
           <p className='text-xs text-[##ADB8CC]'>Dashboard</p>
         </div>
-        <div className='p-8 bg-white scale-110 rounded-lg flex flex-col justify-center items-center'>
+        <div className='p-8 bg-white scale-110 relative rounded-lg flex flex-col justify-center items-center'>
+          <svg className='absolute top-4 right-6' xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+            <rect x="11" y="12.5" width="7" height="7" rx="3.5" fill="#3361FF"/>
+          </svg>
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M16 12.5H6C5.45 12.5 5 12.95 5 13.5C5 14.05 5.45 14.5 6 14.5H16C16.55 14.5 17 14.05 17 13.5C17 12.95 16.55 12.5 16 12.5ZM16 8.5H6C5.45 8.5 5 8.95 5 9.5C5 10.05 5.45 10.5 6 10.5H16C16.55 10.5 17 10.05 17 9.5C17 8.95 16.55 8.5 16 8.5ZM6 18.5H12C12.55 18.5 13 18.05 13 17.5C13 16.95 12.55 16.5 12 16.5H6C5.45 16.5 5 16.95 5 17.5C5 18.05 5.45 18.5 6 18.5ZM25.21 14.71L25.3 14.8C25.69 15.19 25.69 15.82 25.3 16.21L19.72 21.8C19.33 22.19 18.7 22.19 18.31 21.8L15.22 18.71C15.0327 18.5232 14.9275 18.2695 14.9275 18.005C14.9275 17.7405 15.0327 17.4868 15.22 17.3L15.31 17.21C15.7 16.82 16.33 16.82 16.72 17.21L19.02 19.51L23.8 14.72C24.18 14.32 24.82 14.32 25.21 14.71Z" fill="#3361FF"/>
           </svg>
